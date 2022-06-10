@@ -1,0 +1,281 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/cats/cat_4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* desktop__navbar */
+
+    .desktop__nav {
+        background-color: transparent;
+        width: 100%;
+        height: 100px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        & ul {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            & li {
+                padding: 0.4rem;
+
+                & a {
+                    color: var(--light);
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: var(--light-gray);
+                        font-weight: bold;
+                        margin: 0 0.4rem 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    & .hero__text {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: var(--light);
+        
+        & .hero__box {
+            margin: 0 0 0 4rem;
+            padding: 2rem;
+            width: 75%;
+            height: 50%;
+
+            & .hero_title {
+                margin: 1rem 0 0 0;
+            }
+
+            & .hero_sub__title {
+                margin: 1rem 0 1rem 0;
+                line-height: 1.5;
+            }
+
+            & .hero__btn {
+                width: 140px;
+                padding: 1rem;
+                margin: 1rem 0 1rem 0;
+                border: var(--orange);
+                background-color: var(--orange);
+                color: var(--light);
+                font-weight: bold;
+                text-transform: uppercase;
+                transition: all 0.2s ease-in-out;
+
+                & a {
+                    color: var(--light);
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                    color: var(--light);
+                    background-color: transparent;
+                    border: 3px solid var(--orange);
+                    padding: 1.2rem;
+                }
+            }
+        }
+    }
+
+    /* mobile__navbar */
+
+    .menu_btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        color: rgba(0,0,0,0.9);
+        font-size: 20px;
+        cursor: pointer;
+        background: none;
+        transition: all 0.3s ease;
+
+        & i {
+            width: 36px;
+            height: 3px;
+            position: fixed;
+            top: 50;
+            right: 50;
+            font-weight: bold;
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.03);
+        }
+    }
+
+    #active:checked ~ .mobile__nav {
+        clip-path: circle(100%);
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    #active:checked ~ .menu_btn {
+        color: #fff;
+
+        & i:before {
+            content: "\f00d";
+        }
+    }
+
+    .mobile__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        clip-path: circle(25px at calc(100% - 45px) 45px);
+        transition: all 0.3s ease-in-out;
+    
+        & ul {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+    
+            & li {
+                margin: 1rem 0;
+    
+                & a {
+                    color: var(--lighter-gray);
+                    font-size: 27px;
+                    font-weight: bold;
+                    position: relative;
+                    line-height: 50px;
+                    transition: all 0.3s ease-in-out;
+    
+                    &:hover {
+                        color: var(--orange);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 547px) {
+    .desktop__nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero {
+        height: 1000px;
+
+        & .hero__text {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 547px) and (max-width: 720px) {
+    .desktop__nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero {
+        height: 1000px;
+
+        & .hero__text {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 900px) {
+    .desktop__nav {
+        display: flex;
+    }
+
+    .mobile__nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu_btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero {
+        height: 900px;
+
+        & .hero__text {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1080px) {
+    .desktop__nav {
+        display: flex;
+    }
+
+    .mobile__nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu_btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero {
+        height: 100vh;
+
+        & .hero__text {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    .desktop__nav {
+        display: flex;
+    }
+
+    .mobile__nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu_btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+}
