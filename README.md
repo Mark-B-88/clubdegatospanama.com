@@ -4,4 +4,18 @@
 
 # Setup Styling
 
-- [ ] Complete Styling from template design
+- [x] Complete Styling from template design
+- [ ] Make all components mobile responsive
+
+# Blog Section
+
+- [ ] Setup Blog Page
+
+# Contact Form
+
+- [ ] Setup nodemailer for contact form
+
+# Site Logos
+
+- [ ] Setup the favicon
+- [ ] Setup company logo on navbar, possibly footer
