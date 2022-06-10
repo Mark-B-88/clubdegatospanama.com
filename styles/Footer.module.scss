@@ -8,6 +8,20 @@
     background-color: var(--dark);
     color: var(--light);
 
+    & .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    
+    & .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
     & p {
         font-size: 27px;
         font-weight: bold;

@@ -4,6 +4,20 @@
     background-color: var(--light);
     color: var(--dark);
 
+    & .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    
+    & .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
     /* desktop__navbar */
 
     .desktop__nav {

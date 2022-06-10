@@ -41,20 +41,6 @@ p { font-size: 18px; }
 
 .container {
   width: auto;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
 }

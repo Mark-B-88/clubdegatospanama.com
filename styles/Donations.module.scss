@@ -4,6 +4,20 @@
     background-color: var(--light);
     color: var(--dark);
 
+    & .row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+
+    & .col {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
     & .donations__text {
         width: 100%;
         height: 100vh;
@@ -34,7 +48,7 @@
         justify-content: center;
         align-items: center;
 
-        & img {
+        & .computer_img {
             width: 720px;
             height: auto;
             border-top-right-radius: 90px;
@@ -47,6 +61,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 547px){
     .donations {
+        border: 4px solid red;
         width: auto;
         height: auto;
 
@@ -55,14 +70,14 @@
         }
 
         & .donations__text {
-            & img {
-                width: 270px;
+            & .logo_img {
+                width: 180px;
                 height: auto;
             }
         }
 
         & .donations__image {
-            & img {
+            & .computer_img {
                 width: 360px;
                 height: auto;
             }
@@ -72,6 +87,7 @@
 
 @media screen and (min-width: 548px) and (max-width: 720px){
     .donations {
+        border: 4px solid blue;
         width: auto;
         height: auto;
 
@@ -80,14 +96,14 @@
         }
 
         & .donations__text {
-            & img {
+            & .logo_img {
                 width: 270px;
                 height: auto;
             }
         }
 
         & .donations__image {
-            & img {
+            & .computer_img {
                 width: 450px;
                 height: auto;
             }
@@ -97,6 +113,7 @@
 
 @media screen and (min-width: 721px) and (max-width: 900px){
     .donations {
+        border: 4px solid black;
         width: auto;
         height: auto;
 
@@ -105,14 +122,14 @@
         }
 
         & .donations__text {
-            & img {
+            & .logo_img {
                 width: 270px;
                 height: auto;
             }
         }
 
         & .donations__image {
-            & img {
+            & .computer_img {
                 width: 450px;
                 height: auto;
             }
@@ -122,24 +139,27 @@
 
 @media screen and (min-width: 901px) and (max-width: 1080px){
     .donations {
+        border: 4px solid yellowgreen;
         width: auto;
         height: auto;
 
         & .row {
             flex-wrap: nowrap;
-        }
 
-        & .donations__text {
-            & img {
-                width: 270px;
-                height: auto;
+            & .donations__text {
+
+                & .logo_img {
+                    width: 270px;
+                    height: auto;
+                }
             }
-        }
 
-        & .donations__image {
-            & img {
-                width: 360px;
-                height: auto;
+            & .donations__image {
+
+                & .computer_img {
+                    width: 360px;
+                    height: auto;
+                }
             }
         }
     }
@@ -147,6 +167,7 @@
 
 @media screen and (min-width: 1081px) and (max-width: 1280px){
     .donations {
+        border: 4px solid orangered;
         width: auto;
         height: auto;
         padding: 4rem;
@@ -156,14 +177,14 @@
         }
 
         & .donations__text {
-            & img {
+            & .logo_img {
                 width: 270px;
                 height: auto;
             }
         }
 
         & .donations__image {
-            & img {
+            & .computer_img {
                 width: 540px;
                 height: auto;
             }
@@ -173,6 +194,7 @@
 
 @media screen and (min-width: 1281px) and (max-width: 1440px){
     .donations {
+        border: 4px solid steelblue;
         width: auto;
         height: auto;
         padding: 4rem;
@@ -182,14 +204,14 @@
         }
 
         & .donations__text {
-            & img {
+            & .logo_img {
                 width: 270px;
                 height: auto;
             }
         }
 
         & .donations__image {
-            & img {
+            & .computer_img {
                 width: 540px;
                 height: auto;
             }
