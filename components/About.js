@@ -22,6 +22,7 @@ export default function AboutComponent(){
                     <div className={aboutStyles.about__image}>
                         <div className={aboutStyles.about__image__container}>
                             <img 
+                                alt='Bigo'
                                 src='/images/cats/Bigo.jpg' 
                                 className={aboutStyles.image__container__image}
                             />
@@ -34,8 +35,9 @@ export default function AboutComponent(){
                     <div className={aboutStyles.about__image}>
                         <div className={aboutStyles.about__image__container}>
                         <img 
-                                src='/images/cats/Colita.jpg' 
-                                className={aboutStyles.image__container__image}
+                            alt='Colita'
+                            src='/images/cats/Colita.jpg' 
+                            className={aboutStyles.image__container__image}
                             />
                         </div>
                     </div>
