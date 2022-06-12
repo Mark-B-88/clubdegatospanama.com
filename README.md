@@ -9,7 +9,8 @@
 
 # Blog Section
 
-- [ ] Setup Blog Page
+- [x] Setup Blog Page
+- [ ] Wait for feedback for blog content
 
 # Contact Form
 

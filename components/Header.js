@@ -35,13 +35,11 @@ export default function HeaderComponent(){
                     </li>
 
                     <li>
-                        <a href='#contact'>Contáctame</a>
+                        <a href='#blog'>Blog</a>
                     </li>
 
                     <li>
-                        <Link href='blog'>
-                            <a>Blog</a>
-                        </Link>
+                        <a href='#contact'>Contáctame</a>
                     </li>
                 </ul>
             </nav>
@@ -51,7 +49,7 @@ export default function HeaderComponent(){
             <nav className={heroStyles.desktop__nav}>
                 <ul>
                     <li>
-                        <a href='./index.html'>Inicio</a>
+                        <Link href='home'>Inicio</Link>
                     </li>
 
                     <li>
@@ -67,11 +65,11 @@ export default function HeaderComponent(){
                     </li>
 
                     <li>
-                        <a href='#contact'>Contáctame</a>
+                        <a href='#blog'>Blog</a>
                     </li>
 
                     <li>
-                        <a href='./blog.html'>Blog</a>
+                        <a href='#contact'>Contáctame</a>
                     </li>
                 </ul>
             </nav>
