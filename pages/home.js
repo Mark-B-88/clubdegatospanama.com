@@ -1,5 +1,5 @@
 // import HeaderComponent from '../components/Header'
-import AboutComponent from '../components/About'
+// import AboutComponent from '../components/About'
 // import QuestionsComponent from '../components/Questions'
 // import DonationsComponent from '../components/Donations'
 // import ContactComponent from '../components/Contact'
@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
     <div className='container'>
         {/* <HeaderComponent /> */}
-        <AboutComponent />
+        {/* <AboutComponent /> */}
         {/* <QuestionsComponent /> */}
         {/* <DonationsComponent /> */}
         {/* <ContactComponent /> */}

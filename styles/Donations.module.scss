@@ -17,7 +17,6 @@
             height: auto;
 
             & .donations__text {
-                border: 4px solid red;
                 width: 100%;
                 height: 100vh;
                 display: flex;
@@ -37,6 +36,11 @@
                 & p {
                     font-size: 27px;
                 }
+
+                & .logo_img {
+                    width: 360px;
+                    height: 180px;
+                }
             }
         
             & .donations__image {
@@ -48,12 +52,12 @@
                 align-items: center;
         
                 & .computer_img {
-                    width: 720px;
+                    width: 540px;
                     height: auto;
                     border-top-right-radius: 90px;
                     border-bottom-left-radius: 90px;
                     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.36);
-                    padding: 2rem;
+                    padding: 1rem;
                 }
             }
         }
@@ -62,160 +66,196 @@
 
 @media screen and (min-width: 320px) and (max-width: 547px){
     .donations {
-        border: 4px solid red;
-        width: auto;
-        height: auto;
-
+        width: 100%;
+        height: 100vh;
+    
         & .row {
             flex-wrap: wrap;
-        }
+    
+            & .col {    
+                & .donations__text {
+                    height: 50vh;
 
-        & .donations__text {
-            & .logo_img {
-                width: 180px;
-                height: auto;
-            }
-        }
+                    & h1 {
+                        font-size: 2rem;
+                    }
 
-        & .donations__image {
-            & .computer_img {
-                width: 360px;
-                height: auto;
+                    & h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    & h1,
+                    & h3,
+                    & p {
+                        margin: 2rem auto;
+                    }
+            
+                    & p {
+                        font-size: 14px;
+                    }
+    
+                    & .logo_img {
+                        width: 180px;
+                        height: 100px;
+                    }
+                }
+            
+                & .donations__image {
+                    width: 100%;
+                    height: 50vh;
+            
+                    & .computer_img {
+                        width: 200px;
+                        height: 200px;
+                        padding: 0.4rem;
+                    }
+                }
             }
         }
     }
 }
 
-// @media screen and (min-width: 548px) and (max-width: 720px){
-//     .donations {
-//         border: 4px solid blue;
-//         width: auto;
-//         height: auto;
+@media screen and (min-width: 548px) and (max-width: 720px){
+    .donations {
+        width: 100%;
+        height: 100vh;
+    
+        & .row {
+            flex-wrap: nowrap;
+    
+            & .col {    
+                & .donations__text {
+                    height: 100vh;
 
-//         & .row {
-//             flex-wrap: wrap;
-//         }
+                    & h1 {
+                        font-size: 2rem;
+                    }
 
-//         & .donations__text {
-//             & .logo_img {
-//                 width: 270px;
-//                 height: auto;
-//             }
-//         }
+                    & h3 {
+                        font-size: 1.5rem;
+                    }
 
-//         & .donations__image {
-//             & .computer_img {
-//                 width: 450px;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
+                    & h1,
+                    & h3,
+                    & p {
+                        margin: 2rem auto;
+                    }
+            
+                    & p {
+                        font-size: 14px;
+                    }
+    
+                    & .logo_img {
+                        width: 180px;
+                        height: 100px;
+                    }
+                }
+            
+                & .donations__image {
+                    width: 100%;
+                    height: 100vh;
+            
+                    & .computer_img {
+                        width: 200px;
+                        height: 200px;
+                        padding: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
-// @media screen and (min-width: 721px) and (max-width: 900px){
-//     .donations {
-//         border: 4px solid black;
-//         width: auto;
-//         height: auto;
+@media screen and (min-width: 721px) and (max-width: 900px){
+    .donations {
+        width: 100%;
+        height: 100vh;
+    
+        & .row {
+            flex-wrap: nowrap;
+    
+            & .col {    
+                & .donations__text {
+                    height: 100vh;
 
-//         & .row {
-//             flex-wrap: wrap;
-//         }
+                    & h1 {
+                        font-size: 2rem;
+                    }
 
-//         & .donations__text {
-//             & .logo_img {
-//                 width: 270px;
-//                 height: auto;
-//             }
-//         }
+                    & h3 {
+                        font-size: 1.5rem;
+                    }
 
-//         & .donations__image {
-//             & .computer_img {
-//                 width: 450px;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
+                    & h1,
+                    & h3,
+                    & p {
+                        margin: 2rem auto;
+                    }
+    
+                    & .logo_img {
+                        width: 180px;
+                        height: 100px;
+                    }
+                }
+            
+                & .donations__image {
+                    width: 100%;
+                    height: 100vh;
+            
+                    & .computer_img {
+                        width: 270px;
+                        height: 270px;
+                        padding: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
-// @media screen and (min-width: 901px) and (max-width: 1080px){
-//     .donations {
-//         border: 4px solid yellowgreen;
-//         width: auto;
-//         height: auto;
+@media screen and (min-width: 901px) and (max-width: 1080px){
+    .donations {
+        width: 100%;
+        height: 100vh;
+    
+        & .row {
+            flex-wrap: nowrap;
+    
+            & .col {    
+                & .donations__text {
+                    height: 100vh;
 
-//         & .row {
-//             flex-wrap: nowrap;
+                    & h1 {
+                        font-size: 2rem;
+                    }
 
-//             & .donations__text {
+                    & h3 {
+                        font-size: 1.5rem;
+                    }
 
-//                 & .logo_img {
-//                     width: 270px;
-//                     height: auto;
-//                 }
-//             }
-
-//             & .donations__image {
-
-//                 & .computer_img {
-//                     width: 360px;
-//                     height: auto;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1081px) and (max-width: 1280px){
-//     .donations {
-//         border: 4px solid orangered;
-//         width: auto;
-//         height: auto;
-//         padding: 4rem;
-
-//         & .row {
-//             flex-wrap: nowrap;
-//         }
-
-//         & .donations__text {
-//             & .logo_img {
-//                 width: 270px;
-//                 height: auto;
-//             }
-//         }
-
-//         & .donations__image {
-//             & .computer_img {
-//                 width: 540px;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1281px) and (max-width: 1440px){
-//     .donations {
-//         border: 4px solid steelblue;
-//         width: auto;
-//         height: auto;
-//         padding: 4rem;
-
-//         & .row {
-//             flex-wrap: nowrap;
-//         }
-
-//         & .donations__text {
-//             & .logo_img {
-//                 width: 270px;
-//                 height: auto;
-//             }
-//         }
-
-//         & .donations__image {
-//             & .computer_img {
-//                 width: 540px;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
+                    & h1,
+                    & h3,
+                    & p {
+                        margin: 2rem auto;
+                    }
+                    
+                    & .logo_img {
+                        width: 270px;
+                        height: 180px;
+                    }
+                }
+            
+                & .donations__image {
+                    width: 100%;
+                    height: 100vh;
+            
+                    & .computer_img {
+                        width: 360px;
+                        height: 360px;
+                        padding: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
