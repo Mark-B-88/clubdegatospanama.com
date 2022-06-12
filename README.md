@@ -5,7 +5,7 @@
 # Setup Styling
 
 - [x] Complete Styling from template design
-- [ ] Make all components mobile responsive
+- [x] Make all components mobile responsive
 
 # Blog Section
 
