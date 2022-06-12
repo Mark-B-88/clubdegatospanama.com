@@ -2,7 +2,7 @@
 // import AboutComponent from '../components/About'
 // import QuestionsComponent from '../components/Questions'
 // import DonationsComponent from '../components/Donations'
-// import ContactComponent from '../components/Contact'
+import ContactComponent from '../components/Contact'
 // import FooterComponent from '../components/Footer'
 
 export default function HomePage() {
@@ -13,7 +13,7 @@ export default function HomePage() {
         {/* <AboutComponent /> */}
         {/* <QuestionsComponent /> */}
         {/* <DonationsComponent /> */}
-        {/* <ContactComponent /> */}
+        <ContactComponent />
         {/* <FooterComponent /> */}
     </div>
     </>
