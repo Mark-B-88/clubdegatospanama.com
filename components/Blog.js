@@ -6,15 +6,15 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function BlogComponent(){
     return (
-        <section class={blogStyles.blog} id='blog'>
-            <div class={blogStyles.row}>
-                <div class={blogStyles.col}>
-                    <div class={blogStyles.blog__content}>
+        <section className={blogStyles.blog} id='blog'>
+            <div className={blogStyles.row}>
+                <div className={blogStyles.col}>
+                    <div className={blogStyles.blog__content}>
                         <h1>Articles &amp; More</h1>
-                        <div class={blogStyles.blog__underline}></div>
+                        <div className={blogStyles.blog__underline}></div>
 
                         {/* <!-- article 1 --> */}
-                        <div class={blogStyles.blog__article}>
+                        <div className={blogStyles.blog__article}>
                             <h1>Why Does My Cat Sleep So Much?</h1>
                             <h4>June 7th 2022</h4>
                             <p>
@@ -24,7 +24,7 @@ export default function BlogComponent(){
                         </div>
 
                         {/* <!-- article 2 --> */}
-                        <div class={blogStyles.blog__article}>
+                        <div className={blogStyles.blog__article}>
                             <h1>Why Does My Cat Sleep So Much?</h1>
                             <h4>June 7th 2022</h4>
                             <p>
@@ -34,7 +34,7 @@ export default function BlogComponent(){
                         </div>
 
                         {/* <!-- article 3 --> */}
-                        <div class={blogStyles.blog__article}>
+                        <div className={blogStyles.blog__article}>
                             <h1>Why Does My Cat Sleep So Much?</h1>
                             <h4>June 7th 2022</h4>
                             <p>
