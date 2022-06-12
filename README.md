@@ -1,6 +1,6 @@
 # Configure FontAwesome Icons
 
-- [ ] Correctly configure font-awesome
+- [x] Correctly configure font-awesome
 
 # Setup Styling
 

@@ -1,8 +1,8 @@
 import heroStyles from '../styles/Hero.module.scss'
 import Link from 'next/link'
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function HeaderComponent(){
     return (
@@ -10,10 +10,9 @@ export default function HeaderComponent(){
             <div className={heroStyles.row}>
                 <div className={heroStyles.col}>
             {/* <!-- mobile navbar --> */}
-            <input type='checkbox' id='active' />
-            <label htmlFor='active' className={heroStyles.menu_btn}>
-                {/* <FontAwesomeIcon icon={solid('fa-solid fa-bars')} /> */}
-                {/* <i className='fas fa-bars'></i> */}
+            <input type='checkbox' id={heroStyles.active} />
+            <label htmlFor={heroStyles.active} className={heroStyles.menu_btn}>
+                <FontAwesomeIcon icon={faBars} className={heroStyles.icon} />
             </label>
             <nav className={heroStyles.mobile__nav}>
                 <ul className={heroStyles.menu}>
