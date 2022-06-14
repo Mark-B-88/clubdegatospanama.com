@@ -10,11 +10,12 @@
 # Blog Section
 
 - [x] Setup Blog Page
+- [ ] Re-design the Blog Page
 - [ ] Wait for feedback for blog content
 
 # Contact Form
 
-- [ ] Setup nodemailer for contact form
+- [x] Setup nodemailer for contact form
 
 # Site Logos
 
