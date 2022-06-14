@@ -1,8 +1,8 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/cats/cat_4.jpg');
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/images/cats/bigo_header_img.jpg');
+    background-position: 50% 18%;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -46,7 +46,7 @@
                             transition: all 0.2s ease-in-out;
 
                             &:hover {
-                                color: var(--light-gray);
+                                color: var(--light-pink);
                                 font-weight: bold;
                                 margin: 0 0.4rem 0 0;
                             }
@@ -62,7 +62,6 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                color: var(--light);
                 
                 & .hero__box {
                     margin: 0 0 0 4rem;
@@ -70,36 +69,50 @@
                     width: 75%;
                     height: 50%;
 
-                    & .hero_title {
-                        margin: 1rem 0 0 0;
+                    & .hero__title {
+                        margin: 1rem 0;
+                        color: var(--light-pink);
+                        
+                        & h1 {
+                            font-size: 54px;
+                        }
                     }
 
                     & .hero_sub__title {
-                        margin: 1rem 0 1rem 0;
-                        line-height: 1.5;
+                        margin: 1rem 0;
+                        color: var(--light);
+                        line-height: 1.3;
+
+                        & p {
+                            font-size: 36px;
+                        }
                     }
 
                     & .hero__btn {
-                        width: 140px;
+                        width: 200px;
                         padding: 1rem;
                         margin: 1rem 0 1rem 0;
-                        border: var(--orange);
-                        background-color: var(--orange);
+                        border: var(--light-pink);
+                        background-color: var(--light-pink);
                         color: var(--light);
                         font-weight: bold;
-                        text-transform: uppercase;
+                        text-transform: capitalize;
                         transition: all 0.2s ease-in-out;
 
                         & a {
                             color: var(--light);
+                            font-size: 24px;
+
+                            &:hover {
+                                color: var(--light);
+                            }
                         }
                         
                         &:hover {
                             cursor: pointer;
+                            background: transparent;
                             color: var(--light);
-                            background-color: transparent;
-                            border: 3px solid var(--orange);
-                            padding: 1.2rem;
+                            border: 3px solid var(--light-pink);
                         }
                     }
                 }
@@ -181,7 +194,7 @@
                             transition: all 0.3s ease-in-out;
             
                             &:hover {
-                                color: var(--orange);
+                                color: var(--light-pink);
                                 font-weight: bold;
                             }
                         }

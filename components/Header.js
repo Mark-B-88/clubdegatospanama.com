@@ -35,10 +35,6 @@ export default function HeaderComponent(){
                     </li>
 
                     <li>
-                        <a href='#blog'>Blog</a>
-                    </li>
-
-                    <li>
                         <a href='#contact'>Contáctame</a>
                     </li>
                 </ul>
@@ -65,10 +61,6 @@ export default function HeaderComponent(){
                     </li>
 
                     <li>
-                        <a href='#blog'>Blog</a>
-                    </li>
-
-                    <li>
                         <a href='#contact'>Contáctame</a>
                     </li>
                 </ul>
@@ -81,7 +73,7 @@ export default function HeaderComponent(){
                             </div>
                             <div className={heroStyles.hero_sub__title}>
                                 <p>
-                                    Somos un pequeño grupo dedicado a rescatar gatitos dentro de Panamá. Comenzamos este grupo con la intención de rescatar gatitos y adoptarlos en una familia amorosa. Una pequeña donación contribuye en gran medida a la salud y el bienestar de un gatito, y agradeceríamos mucho cualquier donación que puedas hacer.
+                                    Somos un pequeño grupo dedicado a rescatar gatitos dentro de Panamá. Comenzamos este grupo con la intención de rescatar gatitos y adoptarlos en una familia amorosa.
                                 </p>
                             </div>
                             <button className={heroStyles.hero__btn}>
