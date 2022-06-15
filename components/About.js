@@ -41,7 +41,7 @@ export default function AboutComponent(){
                         <div className={aboutStyles.about__image__container}>
                             <div className={aboutStyles.image__container__image}>
                                 <img 
-                                    src='/images/cats/Colita.jpg'
+                                    src='/images/cats/colita.jpg'
                                 />
                             </div>
                         </div>
