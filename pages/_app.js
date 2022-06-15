@@ -3,9 +3,16 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 
+import Head from 'next/head'
+
 const App = ({ Component, pageProps }) => {
   return (
-    <Component {...pageProps} />
+    <>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
+      <Component {...pageProps} />
+    </>
   )
 }
 
