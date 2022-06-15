@@ -29,6 +29,13 @@
                     color: var(--light-pink);
                 }
             }
+
+            & img {
+                text-align: center;
+                margin: 2rem auto 0 auto;
+                width: 72px;
+                height: 72px;
+            }
         }
     }
 }

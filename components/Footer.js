@@ -6,6 +6,7 @@ export default function FooterComponent(){
             <div className={footerStyles.row}>
                 <div className={footerStyles.col}>
                     <p>Copyright &copy; 2022 | <span>Club De Gatos Panama</span></p>
+                    <img src='/images/logos/site_logo.svg' />
                 </div>
             </div>
         </footer>
