@@ -41,13 +41,7 @@ export default function ContactComponent(){
                     <div className={contactStyles.contact__text}>
                         <h1>Contáctame</h1>
                         <p>
-                            Recibo mensajes diario y les pido amablemente su paciencia.
-                        </p>
-                        <p>
-                            Te responderé lo antes posible
-                        </p>
-                        <p>
-                            Gracias
+                            Recibo mensajes diario y les pido amablemente su paciencia.<br />Te responderé lo antes posible.<br/>Gracias
                         </p>
                     </div>
                 </div>
