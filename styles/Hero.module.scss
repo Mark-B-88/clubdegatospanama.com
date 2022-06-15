@@ -56,8 +56,8 @@
             }
 
             & .hero__text {
-                width: 50vw;
-                height: 100vh;
+                width: 63vw;
+                height: 36vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -143,8 +143,7 @@
                     top: 50;
                     right: 50;
                     font-weight: bold;
-                    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.03);
-                    color: var(--light);
+                    color: var(--light-gray);
                 }
             }
 
@@ -158,7 +157,7 @@
             }
 
             #active:checked ~ .menu_btn {
-                color: #fff;
+                color: var(--light-gray);
 
                 & .icon:before {
                     content: "\f00d";
@@ -186,7 +185,7 @@
                         margin: 1rem 0;
             
                         & a {
-                            color: var(--lighter-gray);
+                            color: var(--light-pink);
                             font-size: 27px;
                             font-weight: bold;
                             position: relative;
@@ -194,7 +193,7 @@
                             transition: all 0.3s ease-in-out;
             
                             &:hover {
-                                color: var(--light-pink);
+                                color: var(--light-gray);
                                 font-weight: bold;
                             }
                         }
@@ -205,44 +204,8 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 547px) {
+@media screen and (min-width: 320px) and (max-width: 545px) {
     .hero {
-        // border: 4px solid red;
-        height: auto;
-        width: auto;
-        margin: 0 auto;
-
-        & .row {
-            & .col {
-                & .desktop__nav {
-                    display: none;
-                    visibility: hidden;
-                }
-
-                & .hero__text {
-                    width: auto;
-                    height: auto;
-                    margin: 4rem auto;
-                    justify-content: flex-start;
-                    align-items: center;
-                    text-align: left;
-        
-                    & h1 {
-                        font-size: 2.5rem;
-                    }
-        
-                    & p {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 547px) and (max-width: 720px) {
-    .hero {
-        // border: 4px solid blue;
         height: 100vh;
         width: auto;
         margin: 0 auto;
@@ -255,6 +218,73 @@
                 }
 
                 & .hero__text {
+                    // border: 4px solid red;
+                    width: auto;
+                    height: auto;
+
+                    & .hero__box {
+                        // border: 4px solid blue;
+                        margin: 2rem auto !important;
+                        width: auto;
+                        height: auto;
+                    }
+
+                    width: auto;
+                    height: 100vh;
+                    margin: 0 auto;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 546px) {
+    .hero {
+        height: 100vh;
+        width: auto;
+        margin: 0 auto;
+
+        & .row {
+            & .col {
+                & .desktop__nav {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                & .hero__text {
+                    & .hero__box {
+                        margin: -18rem 0 0 4rem;
+                    }
+
+                    width: auto;
+                    height: 100vh;
+                    margin: 0 auto;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 547px) and (max-width: 720px) {
+    .hero {
+        height: 100vh;
+        width: auto;
+        margin: 0 auto;
+
+        & .row {
+            & .col {
+                & .desktop__nav {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                & .hero__text {
+                    & .hero__box {
+                        margin: -18rem 0 0 4rem;
+                    }
+
                     width: auto;
                     height: 100vh;
                     margin: 0 auto;
@@ -267,7 +297,6 @@
 
 @media screen and (min-width: 721px) and (max-width: 900px) {
     .hero {
-        // border: 4px solid salmon;
         width: auto;
         height: 100vh;
 
@@ -299,7 +328,6 @@
 
 @media screen and (min-width: 901px) and (max-width: 1080px) {
     .hero {
-        // border: 4px solid orangered;
         width: auto;
         height: 100vh;
 
@@ -331,7 +359,6 @@
 
 @media screen and (min-width: 1081px) {
     .hero {
-        // border: 4px solid limegreen;
         width: auto;
         height: 100vh;
 

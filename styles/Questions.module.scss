@@ -44,7 +44,6 @@
                     font-weight: 500;
                     margin: 1rem 0 2rem 0;
                     padding: 0 2rem;
-                    font-size: 27px;
                 }
         
                 & .questions__underline {
@@ -54,6 +53,74 @@
                     border: 1px solid var(--dark);
                     border-radius: 18px;
                     background-color: var(--dark);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 547px){
+    .questions {
+        width: auto;
+        height: auto;
+        padding: 0;
+
+        & .row {
+            & .col {
+                & .questions__text {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4rem;
+                    text-align: center;
+                    margin: 0 auto;
+            
+                    & h1 {
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+
+                    & .questions__underline {
+                        margin: 2rem auto;
+                        width: 100px;
+                    }
+
+                    & h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    & p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 899px){
+    .questions {
+        width: auto;
+        height: auto;
+
+        & .row {
+            & .col {
+                & .questions__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 4rem;
+                    text-align: left;
+            
+                    & h1 {
+                        margin: 1rem auto;
+                        padding: 0 2rem;
+                        text-align: center;
+                    }
                 }
             }
         }

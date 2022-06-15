@@ -1,6 +1,6 @@
 # Setup Styling
 
-- [ ] Make all components mobile responsive
+- [x] Make all components mobile responsive
 
 # Blog Section
 

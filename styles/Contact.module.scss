@@ -30,7 +30,7 @@
                 align-items: flex-start;
         
                 & h1 {
-                    margin: 1rem 12rem 0 12rem;
+                    margin: 0 auto;
                 }
         
                 & p {
@@ -98,6 +98,244 @@
                             color: var(--brown);
                             background-color: var(--light);
                             cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 546px){
+    .contact {
+        width: 100%;
+        height: auto;
+
+        & .row {
+            flex-wrap: wrap;
+
+            & .col {
+
+                & .contact__text {
+                    height: 50vh;
+
+                    & h1 {
+                        font-size: 2rem;
+                    }
+
+                    & p {
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+
+                & .contact__form {
+                    width: 100%;
+                    height: 100vh;
+            
+                    & form {
+                        width: 270px;
+                        height: 630px;
+            
+                        & input {
+                            width: 180px;
+                            height: 40px;
+                        }
+            
+                        & .message {
+                            width: 180px;
+                            height: 300px;
+                        }
+            
+                        & .contact__btn {
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 547px) and (max-width: 719px){
+    .contact {
+        width: 100%;
+        height: auto;
+
+        & .row {
+            flex-wrap: wrap;
+
+            & .col {
+
+                & .contact__text {
+                    height: 50vh;
+
+                    & p {
+                        text-align: center;
+                    }
+                }
+
+                & .contact__form {
+                    width: 100%;
+                    height: 100vh;
+            
+                    & form {
+                        width: 450px;
+                        height: 630px;
+            
+                        & input {
+                            width: 360px;
+                            height: 40px;
+                        }
+            
+                        & .message {
+                            width: 360px;
+                            height: 300px;
+                        }
+            
+                        & .contact__btn {
+                            width: 360px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 899px){
+    .contact {
+        width: 100%;
+        height: auto;
+
+        & .row {
+            flex-wrap: wrap;
+
+            & .col {
+
+                & .contact__text {
+                    height: 50vh;
+                }
+
+                & .contact__form {
+                    width: 100%;
+                    height: 100vh;
+            
+                    & form {
+                        width: 540px;
+                        height: 630px;
+            
+                        & input {
+                            width: 450px;
+                            height: 40px;
+                        }
+            
+                        & .message {
+                            width: 450px;
+                            height: 300px;
+                        }
+            
+                        & .contact__btn {
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1079px){
+    .contact {
+        width: 100%;
+        height: auto;
+
+        & .row {
+            flex-wrap: wrap;
+
+            & .col {
+                & .contact__text {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1279px){
+    .contact {
+        width: 100%;
+        height: auto;
+    
+        & .row {
+            flex-wrap: wrap;
+    
+            & .col {
+                & .contact__text {
+                    width: 100%;
+                    height: 50vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px){
+    .contact {
+        & .row {
+            & .col {
+                & .contact__form {
+                    & form {
+                        width: 360px;
+                        height: 450px;
+                        padding: 2rem;
+            
+                        & input {
+                            width: 270px;
+                            height: 40px;
+                            padding: 1rem;
+                            margin: 0.4rem auto;
+                        }
+            
+                        & .message {
+                            width: 270px;
+                        }
+            
+                        & .contact__btn {
+                            width: 270px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1499px){
+    .contact {
+        & .row {
+            & .col {
+                & .contact__form {
+                    & form {
+                        width: 540px;
+                        height: 540px;
+                        padding: 2rem;
+            
+                        & input {
+                            width: 360px;
+                            height: 40px;
+                            padding: 1rem;
+                            margin: 0.4rem auto;
+                        }
+            
+                        & .message {
+                            width: 360px;
+                            height: 300px;
+                        }
+            
+                        & .contact__btn {
+                            width: 360px;
+                            height: 60px;
                         }
                     }
                 }

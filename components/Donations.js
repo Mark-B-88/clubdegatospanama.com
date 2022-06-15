@@ -7,11 +7,8 @@ export default function DonationsComponent(){
                 <div className={donationsStyles.col}>
                     <div className={donationsStyles.donations__text}>
                         <h1>Donaciones</h1>
-                        <h3>
-                            Una pequeña donación contribuye en gran medida a la salud y el bienestar de un gatito, y agradeceríamos mucho cualquier donación que puedas hacer.
-                        </h3>
                         <p>
-                            Estamos muy agradecidos por su apoyo. Puedes apoyarnos con tu donación a través de Yappy.
+                            Estamos muy agradecidos por su apoyo. Puedes apoyarnos con tu donación a través de Yappy.<br/><br/>Una pequeña donación contribuye en gran medida a la salud y el bienestar de un gatito, y agradeceríamos mucho cualquier donación que puedas hacer.
                         </p>
                         <img
                             src='/images/logos/yappy-logo.png' 
