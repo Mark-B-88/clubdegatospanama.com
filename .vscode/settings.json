@@ -36,7 +36,7 @@
     "terminal.integrated.drawBoldTextInBrightColors": false,
     /* Workbench Settings */
     "workbench.editor.showTabs": true,
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
     "workbench.iconTheme": "eq-material-theme-icons-darker",
     "workbench.colorTheme": "United Ubuntu",
     "workbench.colorCustomizations": {

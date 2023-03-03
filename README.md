@@ -1,3 +1,2 @@
-# Blog Section
-
-- [ ] Re-design the Blog Page
+# Re-design of [clubdegatospanama.com](https://clubdegatospanama.com)
+To avoid a ***vender lock-in*** with Vercel, this project will be completely re-designed and re-built from scratch using node and express on the backend and react-vite on the frontend.
