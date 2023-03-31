@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import heroStyles from '../styles/Hero.module.scss'
 import Link from 'next/link'
 
@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function MobileNavbar() {
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = React.useState(false)
     const toggleMenu = () => setMenuOpen(!menuOpen)
     const closeMenu = () => setMenuOpen(false)
 

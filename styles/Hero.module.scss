@@ -6,6 +6,20 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    .scrollToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.90);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 18px;
+        z-index: 1000;
+    }
+
     & .row {
         display: flex;
         flex-direction: row;
