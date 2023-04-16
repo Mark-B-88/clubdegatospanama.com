@@ -2,26 +2,13 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const helmet = require("helmet");
-const { port } = require("./config/db");
+const { PORT } = require("./config/db");
+const contactRoute = require("./routes/contact");
 
+app.use(express.json());
 app.use(cors());
 app.use(helmet());
 
-app.get("/api/v1/test", (req, res) => {
-    res.status(200).json({
-        user: {
-            name: "John Doe",
-            email: "john_doe@gmail.com",
-            age: 35,
-            address: {
-                street: "123 Main St",
-                city: "New York",
-                state: "NY",
-                zipCode: "10001"
-            },
-            message: "Hello World!"
-        }
-    });
-});
+app.use("/api/v1", contactRoute);
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+app.listen(PORT, () => console.log(`server running on port ${PORT}`));
