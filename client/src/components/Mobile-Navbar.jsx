@@ -9,6 +9,8 @@ const MobileNavbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
 
+    const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
     return (
         <>
             <div className="menu_btn" onClick={toggleMenu}>
@@ -25,7 +27,7 @@ const MobileNavbar = () => {
             >
                 <ul className="menu">
                     <li onClick={closeMenu}>
-                        <Link href="/">Inicio</Link>
+                        <Link href="/" onClick={scrollToTop}>Inicio</Link>
                     </li>
 
                     <li onClick={closeMenu}>

@@ -23,7 +23,7 @@ const DesktopNavbar = () => {
             <nav className="desktop__nav">
                 <ul>
                     <li>
-                        <Link href="/">Inicio</Link>
+                        <Link to="/" onClick={scrollToTop}>Inicio</Link>
                     </li>
 
                     <li>
