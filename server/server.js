@@ -11,4 +11,4 @@ app.use(helmet());
 
 app.use("/api/v1", contactRoute);
 
-app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+app.listen(PORT);
