@@ -1,9 +1,9 @@
+const nodemailer = require('nodemailer');
 const { EMAIL, PASSWORD, HOST } = require("../config/db");
 const dotenv = require("dotenv");
 
-dotenv.config();
 async function sendMessage(req, res) {
-    let nodemailer = require('nodemailer');
+    dotenv.config();
     const transporter = nodemailer.createTransport({
         port: 465,
         host: HOST,
