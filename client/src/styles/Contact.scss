@@ -21,18 +21,18 @@
             height: auto;
 
             & .contact__text {
-                background-color: rgba(255,182,193, 0.45);
+                background-color: rgba(255, 182, 193, 0.45);
                 width: 100%;
                 height: 100vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-        
+
                 & h1 {
                     margin: 0 auto;
                 }
-        
+
                 & p {
                     margin: 1rem auto 0 auto;
                     font-size: 27px;
@@ -40,7 +40,7 @@
                     line-height: 1.7;
                 }
             }
-        
+
             & .contact__form {
                 width: 100%;
                 height: 100vh;
@@ -49,7 +49,7 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0 auto;
-        
+
                 & form {
                     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.18);
                     border-radius: 9px;
@@ -61,14 +61,14 @@
                     margin: 0 auto;
                     width: 630px;
                     height: 630px;
-        
+
                     & input {
                         width: 540px;
                         height: 40px;
                         padding: 1rem;
                         margin: 0.4rem auto;
                     }
-        
+
                     & .message {
                         resize: none;
                         width: 540px;
@@ -76,7 +76,7 @@
                         padding: 1rem;
                         margin: 0.4rem auto;
                     }
-        
+
                     & .contact__btn {
                         width: 540px;
                         height: 60px;
@@ -93,7 +93,7 @@
                         border: 1px solid var(--light-pink);
                         color: var(--light);
                         transition: all 0.2s ease-in-out;
-        
+
                         &:hover {
                             color: var(--brown);
                             background-color: var(--light);
@@ -106,7 +106,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 546px){
+@media screen and (min-width: 320px) and (max-width: 546px) {
     .contact {
         width: 100%;
         height: auto;
@@ -132,21 +132,21 @@
                 & .contact__form {
                     width: 100%;
                     height: 100vh;
-            
+
                     & form {
                         width: 270px;
                         height: 630px;
-            
+
                         & input {
                             width: 180px;
                             height: 40px;
                         }
-            
+
                         & .message {
                             width: 180px;
                             height: 300px;
                         }
-            
+
                         & .contact__btn {
                             width: 180px;
                         }
@@ -157,7 +157,7 @@
     }
 }
 
-@media screen and (min-width: 547px) and (max-width: 719px){
+@media screen and (min-width: 547px) and (max-width: 719px) {
     .contact {
         width: 100%;
         height: auto;
@@ -178,21 +178,21 @@
                 & .contact__form {
                     width: 100%;
                     height: 100vh;
-            
+
                     & form {
                         width: 450px;
                         height: 630px;
-            
+
                         & input {
                             width: 360px;
                             height: 40px;
                         }
-            
+
                         & .message {
                             width: 360px;
                             height: 300px;
                         }
-            
+
                         & .contact__btn {
                             width: 360px;
                         }
@@ -203,7 +203,7 @@
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 899px){
+@media screen and (min-width: 720px) and (max-width: 899px) {
     .contact {
         width: 100%;
         height: auto;
@@ -220,21 +220,21 @@
                 & .contact__form {
                     width: 100%;
                     height: 100vh;
-            
+
                     & form {
                         width: 540px;
                         height: 630px;
-            
+
                         & input {
                             width: 450px;
                             height: 40px;
                         }
-            
+
                         & .message {
                             width: 450px;
                             height: 300px;
                         }
-            
+
                         & .contact__btn {
                             width: 450px;
                         }
@@ -245,7 +245,7 @@
     }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1079px){
+@media screen and (min-width: 900px) and (max-width: 1079px) {
     .contact {
         width: 100%;
         height: auto;
@@ -262,14 +262,14 @@
     }
 }
 
-@media screen and (min-width: 1080px) and (max-width: 1279px){
+@media screen and (min-width: 1080px) and (max-width: 1279px) {
     .contact {
         width: 100%;
         height: auto;
-    
+
         & .row {
             flex-wrap: wrap;
-    
+
             & .col {
                 & .contact__text {
                     width: 100%;
@@ -280,7 +280,7 @@
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px){
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
     .contact {
         & .row {
             & .col {
@@ -289,18 +289,18 @@
                         width: 360px;
                         height: 450px;
                         padding: 2rem;
-            
+
                         & input {
                             width: 270px;
                             height: 40px;
                             padding: 1rem;
                             margin: 0.4rem auto;
                         }
-            
+
                         & .message {
                             width: 270px;
                         }
-            
+
                         & .contact__btn {
                             width: 270px;
                         }
@@ -311,7 +311,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1499px){
+@media screen and (min-width: 1440px) and (max-width: 1499px) {
     .contact {
         & .row {
             & .col {
@@ -320,19 +320,19 @@
                         width: 540px;
                         height: 540px;
                         padding: 2rem;
-            
+
                         & input {
                             width: 360px;
                             height: 40px;
                             padding: 1rem;
                             margin: 0.4rem auto;
                         }
-            
+
                         & .message {
                             width: 360px;
                             height: 300px;
                         }
-            
+
                         & .contact__btn {
                             width: 360px;
                             height: 60px;
@@ -341,5 +341,31 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 547px) {
+    .recaptcha {
+        width: 100%;
+        height: auto;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.60);
+        transform-origin: 0 0;
+        margin: 1rem 2.5rem !important;
+    }
+}
+
+@media screen and (min-width: 548px) {
+    .recaptcha {
+        width: 100%;
+        height: auto;
+    }
+
+    .g-recaptcha {
+        transform: scale(0.9);
+        transform-origin: 0 0;
+        margin: 1rem 45px !important;
     }
 }

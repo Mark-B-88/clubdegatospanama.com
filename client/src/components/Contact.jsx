@@ -1,14 +1,25 @@
 import React from "react";
 import "../styles/Contact.scss";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const [recaptchaVerified, setRecaptchaVerified] = React.useState(false);
+    const recaptchaRef = React.useRef(null);
+
+    const handleRecaptchaChange = () => setRecaptchaVerified(true);
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        if (!recaptchaVerified) {
+            alert("Por favor, verifique el ReCAPTCHA");
+            return;
+        };
+
         const body = { name, email, message };
 
         if (!body.name || !body.email || !body.message) {
@@ -50,6 +61,8 @@ const Contact = () => {
             setName("");
             setEmail("");
             setMessage("");
+            setRecaptchaVerified(false);
+            recaptchaRef.current.reset();
             return;
         };
     }
@@ -93,6 +106,14 @@ const Contact = () => {
                                 onChange={(e) => setMessage(e.target.value)}
                                 required
                             ></textarea>
+                            <div className="recaptcha">
+                                <ReCAPTCHA
+                                    ref={recaptchaRef}
+                                    className="g-recaptcha"
+                                    sitekey={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}
+                                    onChange={handleRecaptchaChange}
+                                />
+                            </div>
                             <input
                                 type="submit"
                                 onClick={(e) => handleSubmit(e)}
